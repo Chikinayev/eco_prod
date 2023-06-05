@@ -73,10 +73,10 @@ public class ProductService {
                 productRepository.delete(product);
                 log.info("Product with id = {} was deleted", id);
             } else {
-                log.error("User: {} haven't this product with id = {}", user.getEmail(), id);
+                log.error("User: {} haven't this event with id = {}", user.getEmail(), id);
             }
         } else {
-            log.error("Product with id = {} is not found", id);
+            log.error("Event with id = {} is not found", id);
         }    }
 
     public Product getProductById(Long id) {
